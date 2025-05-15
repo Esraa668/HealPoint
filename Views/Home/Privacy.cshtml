@@ -1,0 +1,97 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="container py-5">
+    <h1 class="display-4 mb-4">@ViewData["Title"]</h1>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3 class="card-title"><i class="fas fa-info-circle text-primary"></i> Introduction</h3>
+            <p class="card-text">
+                This Privacy Policy describes how we collect, use, and disclose your personal information when you use our Department and Employee Management System.
+            </p>
+        </div>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3 class="card-title"><i class="fas fa-database text-primary"></i> Information We Collect</h3>
+            <ul>
+                <li>Department information (name, description, manager)</li>
+                <li>Employee details (name, contact information, job title)</li>
+                <li>User account information for system administrators</li>
+                <li>Usage data and system logs</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3 class="card-title"><i class="fas fa-shield-alt text-primary"></i> Data Security</h3>
+            <p>
+                We implement appropriate technical and organizational measures to protect your data:
+            </p>
+            <ul>
+                <li>Secure server infrastructure</li>
+                <li>Role-based access control</li>
+                <li>Regular system backups</li>
+                <li>Encryption of sensitive data</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+        <div class="card-body">
+            <h3 class="card-title"><i class="fas fa-user-clock text-primary"></i> Data Retention</h3>
+            <p>
+                We retain personal data only for as long as necessary to:
+            </p>
+            <ul>
+                <li>Provide our services</li>
+                <li>Comply with legal obligations</li>
+                <li>Resolve disputes</li>
+                <li>Enforce our agreements</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h3 class="card-title"><i class="fas fa-question-circle text-primary"></i> Contact Us</h3>
+            <p>
+                If you have any questions about this Privacy Policy, please contact us at:
+            </p>
+            <p>
+                <i class="fas fa-envelope"></i> privacy@yourcompany.com<br>
+                <i class="fas fa-phone"></i> +123 456 7890
+            </p>
+            <p class="text-muted">
+                Last updated: @DateTime.Now.ToString("MMMM dd, yyyy")
+            </p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+    .card-title i {
+        margin-right: 10px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+</style> 
